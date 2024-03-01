@@ -13,3 +13,6 @@ jobs:
 
       - name: Show files in repo
         run: ls -a
+
+      - name: Use my secret
+        run: echo "My password is ${{ secrets.MY_PASSWORD }}"
